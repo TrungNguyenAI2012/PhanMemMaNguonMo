@@ -1,0 +1,28 @@
+<hr>
+<table>
+    <thead>
+        Nội Dung Mới Nhất
+    </thead>
+    <tbody class="index__table">
+        {{# each data}}
+
+        <tr class="btn btn-group border show">
+
+            <td>
+                <a href="/show_content/{{this.ma_tintuc}}">
+                <img src="images/{{this.ma_tintuc}}_01.jpg" alt="" class="img-title-content">
+                </a>
+                <li>{{this.loai}}</li>
+            </td>
+            <td>
+                <a href="/show_content/{{this.ma_tintuc}}">
+                    <h3>{{this.tieude}}</h3>
+                </a>
+                <p class="index__mota">{{this.mota}}</p>
+
+            </td>
+
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
